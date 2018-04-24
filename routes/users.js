@@ -4,7 +4,6 @@ var connection = require('../database/dbconnection');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
- //res.send('respond with a resource');
 
   connection.query('SELECT * from usersession', function (error, results, fields) {
 		if (error) throw error;
